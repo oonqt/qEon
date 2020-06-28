@@ -1,14 +1,12 @@
 {
-  "token": "",
-  "ROBLOX": "",
   "prefix": "?",
   "status": {
     "statustext": "Reals makeing me",
-    "url":"https://twitch.tv/roblox",
+    "url": "https://twitch.tv/roblox",
     "statustype": "STREAMING",
     "status": "dnd"
   },
-  "groupid":1,
+  "groupid": 1,
   "embed": {
     "footer": ""
   },
@@ -19,25 +17,22 @@
   "autoverify": "true",
   "autoverifyid": "703107774200152095",
 
-  "maxfirerank":"",
-  "firedrank":1,
+  "maxfirerank": "",
+  "firedrank": 1,
   "addrankid": "true",
-  "rankids" : {
-    "1":"",
-    "20":""
+  "rankids": {
+    "1": "",
+    "20": ""
   },
-  "discordbotcmdsrole":"",
-  "discordmodlogs":"true",
+  "discordbotcmdsrole": "",
+  "discordmodlogs": "true",
   "discordmodlogschannel": "",
 
-  "rankperm":"",
+  "rankperm": "",
   "robloxlogchannel": "true",
   "robloxlogchannelid": "",
-  "verifyroleids": [
-    "",
-    ""
-  ],
+  "verifyroleids": ["", ""],
   "backupids": {
-    "20":"RTO"
+    "20": "RTO"
   }
 }

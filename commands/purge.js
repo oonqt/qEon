@@ -59,13 +59,13 @@ exports.run = async (client, message, args, config) => {
 
       msg
         .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-        .then(collected => {
+        .then((collected) => {
           const reaction = collected.first();
           if (reaction.emoji.name === "✅") {
-            msg.edit(Ihavebanned).then(msg => {
+            msg.edit(Ihavebanned).then((msg) => {
               msg.delete({ timeout: 1001 });
             });
-            message.channel.bulkDelete(user).catch(function(err) {
+            message.channel.bulkDelete(user).catch(function (err) {
               msg.edit(error);
               console.log(err);
             });

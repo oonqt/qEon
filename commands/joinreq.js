@@ -56,14 +56,14 @@ exports.run = async (client, message, args, config) => {
 
     let robloxusername = await roblox
       .getIdFromUsername({ username: username })
-      .catch(function(err) {
+      .catch(function (err) {
         msg.edit(rankbed2);
       });
     console.log(robloxusername);
 
     let rodopoop = await roblox
       .getUsernameFromId(robloxusername)
-      .catch(function(err) {
+      .catch(function (err) {
         msg.edit(rankbed2);
       });
 
@@ -104,12 +104,12 @@ exports.run = async (client, message, args, config) => {
 
       msg
         .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-        .then(collected => {
+        .then((collected) => {
           const reaction = collected.first();
           if (reaction.emoji.name === "1️⃣") {
             msg.reactions
               .removeAll()
-              .catch(error =>
+              .catch((error) =>
                 console.error("Failed to clear reactions: ", error)
               );
 
@@ -118,9 +118,9 @@ exports.run = async (client, message, args, config) => {
               .handleJoinRequest({
                 group: config.groupid,
                 userId: robloxusername,
-                accept: true
+                accept: true,
               })
-              .catch(function(err) {
+              .catch(function (err) {
                 msg.edit(rankbigerror);
               });
             const accepd = new discord.MessageEmbed()
@@ -147,7 +147,7 @@ exports.run = async (client, message, args, config) => {
           } else if (reaction.emoji.name === "2️⃣") {
             msg.reactions
               .removeAll()
-              .catch(error =>
+              .catch((error) =>
                 console.error("Failed to clear reactions: ", error)
               );
             msg.edit(rankbed4);
@@ -155,9 +155,9 @@ exports.run = async (client, message, args, config) => {
               .handleJoinRequest({
                 group: config.groupid,
                 userId: robloxusername,
-                accept: false
+                accept: false,
               })
-              .catch(function(err) {
+              .catch(function (err) {
                 msg.edit(rankbigerror);
               });
             const denden = new discord.MessageEmbed()
@@ -183,7 +183,7 @@ exports.run = async (client, message, args, config) => {
                 .send(denylog);
             }
           } else {
-            msg.edit(canceled)
+            msg.edit(canceled);
           }
         });
     }

@@ -70,21 +70,21 @@ exports.run = async (client, message, args, config) => {
 
       msg
         .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-        .then(collected => {
+        .then((collected) => {
           const reaction = collected.first();
           if (reaction.emoji.name === "✅") {
             msg.reactions
               .removeAll()
-              .catch(error =>
+              .catch((error) =>
                 console.error("Failed to clear reactions: ", error)
               );
             msg.edit(rankbed4);
             roblox
               .shout({
                 group: config.groupid,
-                message: ""
+                message: "",
               })
-              .catch(function(err) {
+              .catch(function (err) {
                 msg.edit(rankbigerror);
                 console.log(err);
               });

@@ -62,23 +62,23 @@ exports.run = async (client, message, args, config) => {
 
     let robloxusername = await roblox
       .getIdFromUsername({ username: username })
-      .catch(function(err) {
+      .catch(function (err) {
         msg.edit(rankbed2);
       });
     console.log(robloxusername);
 
     let rodopoop = await roblox
       .getUsernameFromId(robloxusername)
-      .catch(function(err) {
+      .catch(function (err) {
         msg.edit(rankbed2);
       });
 
     let playersrank = await roblox
       .getRankInGroup({
         group: config.groupid,
-        userId: robloxusername
+        userId: robloxusername,
       })
-      .catch(function(err) {
+      .catch(function (err) {
         console.log(err);
       });
     console.log(playersrank);
@@ -88,14 +88,14 @@ exports.run = async (client, message, args, config) => {
     let robloxrankinfo = await roblox
       .getRole({
         group: config.groupid,
-        rank: rankargs
+        rank: rankargs,
       })
-      .catch(function(err) {
+      .catch(function (err) {
         msg.channel.send(rankbed3);
       });
     let robloxrankinfo2 = await roblox.getRole({
       group: config.groupid,
-      rank: playersrank
+      rank: playersrank,
     });
 
     const rankdogjfhfk = new discord.MessageEmbed()
@@ -137,21 +137,21 @@ exports.run = async (client, message, args, config) => {
 
           msg
             .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-            .then(collected => {
+            .then((collected) => {
               const reaction = collected.first();
               if (reaction.emoji.name === "✅") {
                 msg.reactions
                   .removeAll()
-                  .catch(error =>
+                  .catch((error) =>
                     console.error("Failed to clear reactions: ", error)
                   );
                 msg.edit(rankbed4);
                 roblox
                   .demote({
                     group: config.groupid,
-                    target: robloxusername
+                    target: robloxusername,
                   })
-                  .catch(function(err) {
+                  .catch(function (err) {
                     msg.edit(rankbigerror);
                   });
                 const rankeddrfugsd = new discord.MessageEmbed()

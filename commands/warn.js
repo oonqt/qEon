@@ -47,8 +47,6 @@ exports.run = async (client, message, args, config) => {
           .setColor("GREEN")
           .setDescription(`I have canceled Warning`);
 
-
-       
         const banlog = new discord.MessageEmbed()
           .setTitle("Discord action!")
           .setColor("GREEN")
@@ -72,10 +70,10 @@ exports.run = async (client, message, args, config) => {
 
         msg
           .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-          .then(collected => {
+          .then((collected) => {
             const reaction = collected.first();
             if (reaction.emoji.name === "✅") {
-              user.send(uhavebeenbaned)
+              user.send(uhavebeenbaned);
               msg.edit(Ihavebanned);
               if (config.discordmodlogs === "true") {
                 message.guild.channels.cache

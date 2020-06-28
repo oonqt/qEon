@@ -10,7 +10,7 @@ exports.run = (client, message, args, config) => {
 
     request(
       { url: `https://verify.eryn.io/api/user/${user.id}` },
-      async function(err, res, body) {
+      async function (err, res, body) {
         if (err) {
           console.log(err);
         } else {
@@ -23,13 +23,13 @@ exports.run = (client, message, args, config) => {
           let tt = config.groupid;
           let rankid = await roblox.getRankInGroup({
             group: groupid,
-            userId: RobloxID
+            userId: RobloxID,
           });
 
           console.log(rankid);
           let rank = await roblox.getRankNameInGroup({
             group: groupid,
-            userId: RobloxID
+            userId: RobloxID,
           });
           var rr = `${rover.robloxUsername} [-] ${rank}`;
           if (rankid) {
@@ -40,7 +40,7 @@ exports.run = (client, message, args, config) => {
                 .addFields({
                   name: "**New role**",
                   value: rank,
-                  inline: true
+                  inline: true,
                 })
 
                 .setFooter("API Used: https://verify.eryn.io")
@@ -48,7 +48,7 @@ exports.run = (client, message, args, config) => {
               message.channel.send(update);
               if (config.verifygroupname === "true") {
                 console.log("true true");
-                config.verifyroleids.forEach(element =>
+                config.verifyroleids.forEach((element) =>
                   user.roles
                     .remove(message.guild.roles.cache.get(element))
                     .then(() =>
@@ -101,7 +101,7 @@ exports.run = (client, message, args, config) => {
 
     request(
       { url: `https://verify.eryn.io/api/user/${user.id}` },
-      async function(err, res, body) {
+      async function (err, res, body) {
         if (err) {
           console.log(err);
         } else {
@@ -114,13 +114,13 @@ exports.run = (client, message, args, config) => {
           let tt = config.groupid;
           let rankid = await roblox.getRankInGroup({
             group: groupid,
-            userId: RobloxID
+            userId: RobloxID,
           });
 
           console.log(rankid);
           let rank = await roblox.getRankNameInGroup({
             group: groupid,
-            userId: RobloxID
+            userId: RobloxID,
           });
           var rr = `${rover.robloxUsername} [-] ${rank}`;
           if (rankid) {
@@ -135,7 +135,7 @@ exports.run = (client, message, args, config) => {
               message.channel.send(update);
               if (config.verifygroupname === "true") {
                 console.log("true true");
-                config.verifyroleids.forEach(element =>
+                config.verifyroleids.forEach((element) =>
                   user.roles
                     .remove(message.guild.roles.cache.get(element))
                     .then(() =>

@@ -4,7 +4,7 @@ const discord = require("discord.js");
 exports.run = async (client, message, args, config) => {
   if (message.member.roles.cache.has(config.rankperm)) {
     let discorduser = message.author.tag;
-    let shout = args.join(' ');
+    let shout = args.join(" ");
 
     const rankbed2 = new discord.MessageEmbed()
       .setTitle("Roblox ranking FAILED")
@@ -71,21 +71,21 @@ exports.run = async (client, message, args, config) => {
 
       msg
         .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-        .then(collected => {
+        .then((collected) => {
           const reaction = collected.first();
           if (reaction.emoji.name === "✅") {
             msg.reactions
               .removeAll()
-              .catch(error =>
+              .catch((error) =>
                 console.error("Failed to clear reactions: ", error)
               );
             msg.edit(rankbed4);
             roblox
               .shout({
                 group: config.groupid,
-                message: shout
+                message: shout,
               })
-              .catch(function(err) {
+              .catch(function (err) {
                 msg.edit(rankbigerror);
                 console.log(err);
               });

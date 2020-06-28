@@ -5,7 +5,7 @@ const request = require("request");
 exports.run = (client, message, args, config) => {
   let user = message.author.id;
 
-  request({ url: `https://verify.eryn.io/api/user/${user}` }, async function(
+  request({ url: `https://verify.eryn.io/api/user/${user}` }, async function (
     err,
     res,
     body
@@ -24,15 +24,15 @@ exports.run = (client, message, args, config) => {
       if (rover.status === "ok") {
         let rankid = await roblox.getRankInGroup({
           group: groupid,
-          userId: RobloxID
+          userId: RobloxID,
         });
 
         console.log(rankid);
         let rank = await roblox.getRankNameInGroup({
           group: groupid,
-          userId: RobloxID
+          userId: RobloxID,
         });
-        const robloxusername = await roblox.getUsernameFromId(RobloxID)
+        const robloxusername = await roblox.getUsernameFromId(RobloxID);
         var rr = `${robloxusername} [-] ${rank}`;
         let verified = new discord.MessageEmbed()
           .setColor("BLUE")

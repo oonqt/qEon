@@ -69,13 +69,13 @@ exports.run = async (client, message, args, config) => {
 
         msg
           .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-          .then(collected => {
+          .then((collected) => {
             const reaction = collected.first();
             if (reaction.emoji.name === "✅") {
               user
                 .send(uhavebeenbaned)
                 .then(() => member.kick(reason))
-                .catch(function(err) {
+                .catch(function (err) {
                   msg.edit(error);
                   console.log(err);
                 });

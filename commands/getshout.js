@@ -46,14 +46,12 @@ exports.run = async (client, message, args, config) => {
       .setFooter(config.embed.footer + " | Ranking command");
 
     const origshout = await roblox.getShout(config.groupid);
-    console.log(origshout)
+    console.log(origshout);
 
     const rankdogjfhfk = new discord.MessageEmbed()
       .setTitle("Ranking confermation")
       .setColor("GREEN")
-      .setDescription(
-        `We have connected to the roblox group service,`
-      )
+      .setDescription(`We have connected to the roblox group service,`)
       .addField("Current shout message:", origshout.body, true);
 
     const msg = await message.channel.send(rankdogjfhfk);

@@ -8,7 +8,7 @@ exports.run = async (client, message, args, config) => {
     const user = message.author;
     request(
       { url: `https://verify.eryn.io/api/user/${user.id}` },
-      async function(err, res, body) {
+      async function (err, res, body) {
         var rover = JSON.parse(body);
         const channelid = message.channel.id;
 
@@ -81,7 +81,7 @@ exports.run = async (client, message, args, config) => {
 
         adm
           .awaitReactions(filter, { max: 1, time: 60000, errors: ["time"] })
-          .then(collected => {
+          .then((collected) => {
             const reaction = collected.first();
             if (reaction.emoji.name === "✅") {
               adm.edit(embed3);
@@ -98,9 +98,9 @@ exports.run = async (client, message, args, config) => {
                 .awaitReactions(filter2, {
                   max: 1,
                   time: 6000000,
-                  errors: ["time"]
+                  errors: ["time"],
                 })
-                .then(collected => {
+                .then((collected) => {
                   const reaction = collected.first();
                   if (reaction.emoji.name === "❌") {
                     cdm.edit("meboo");
