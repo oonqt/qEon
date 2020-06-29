@@ -4,7 +4,7 @@ rBot is a powerfull open source roblox ranking/roblox group/discord moderation b
 
 ## Links
 
-Setup: https://github.com/ItsMrReals/rBot/wiki/Setup-part-one:-Glitch-hosting#rbot-setup-page-1-glitch
+Setup: https://github.com/ItsMrReals/rBot/wiki/Setup-part-one:-repl.it-hosting
 
 Setup part two: https://github.com/ItsMrReals/rBot/wiki/Setup-part-two:-Getting-discord-bot-token
 
