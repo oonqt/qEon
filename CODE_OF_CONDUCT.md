@@ -34,6 +34,7 @@ Examples of unacceptable behavior by participants include:
 - Reselling Rbot
 - Adding rbot and or rbot code to a seaprate bot other then rbot.
 - Using rBot to break discord/roblox TOS.
+- Harassing/insluting rbot.
 
 ## Our Responsibilities
 
