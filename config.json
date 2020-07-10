@@ -34,5 +34,14 @@
   "verifyroleids": ["", ""],
   "backupids": {
     "20": "RTO"
+  },
+  "plugins": {
+    "welcomer": {
+      "channelid": "",
+      "message": "Hello, %MEMBER% rbot is now at %COUNT% members!",
+      "enabled": "true",
+      "title": "",
+      "pinguser": "true"
+    }
   }
 }
