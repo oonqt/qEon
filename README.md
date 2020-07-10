@@ -12,6 +12,11 @@ Setup part three: https://github.com/ItsMrReals/rBot/wiki/Setup-part-three:-Sett
 
 Support server: https://discord.gg/MXTcKuq
 
+Extras: https://github.com/ItsMrReals/rBot/wiki/Extras
+
+Plugins: https://github.com/ItsMrReals/rBot/wiki/rBot-plugins
+
+
 ## Pricing
 
 The base of the bot is free, but we offer hosting (500 robux) and setup (300 robux), If you would like to buy it, join our support server. If you would like to donate to me, you can donate to my hotel game on the donateion board. Link: https://roblox.com/games/4476374855/Points-The-Imperial-Hotel-and-resorts
