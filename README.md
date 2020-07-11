@@ -38,6 +38,17 @@ The base of the bot is free, but we offer hosting (500 robux) and setup (300 rob
 - warn
 - purge
 
+## Plugins
+**Free**
+
+-Shout relay
+
+-Welcomer
+
+**Paid**
+
+-XP (700 robux)
+
 ## Credits
 
 Reals - ItsMrReals - Programmar
