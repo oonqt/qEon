@@ -35,13 +35,20 @@
   "backupids": {
     "20": "RTO"
   },
-  "plugins": {
+ "plugins": {
     "welcomer": {
-      "channelid": "",
+      "channelid": "714319689190342727",
       "message": "Hello, %MEMBER% rbot is now at %COUNT% members!",
       "enabled": "true",
-      "title": "",
+      "title": "Whatever here",
       "pinguser": "true"
+    }, "xp": {
+      "usersonlb": 1,
+      "enabled": false
+      
+    }, "shout": {
+        "enabled": false,
+        "shoutchannelid": ""
     }
   }
 }
