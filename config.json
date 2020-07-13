@@ -49,6 +49,10 @@
     }, "shout": {
         "enabled": false,
         "shoutchannelid": ""
+    },
+    "suggest": {
+      "channelid": "",
+      "enabled": true
     }
   }
 }
