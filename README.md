@@ -37,6 +37,7 @@ The base of the bot is free, but we offer hosting (500 robux) and setup (300 rob
 - update
 - warn
 - purge
+- joinreq
 
 ## Plugins
 **Free**
