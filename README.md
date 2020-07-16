@@ -1,20 +1,20 @@
-# rBot
+# qEon
 
-rBot is a powerfull open source roblox ranking/roblox group/discord moderation bot.
+qEon is a powerfull open source roblox ranking/roblox group/discord moderation bot.
 
 ## Links
 
-Setup: https://github.com/ItsMrReals/rBot/wiki/Setup-part-one:-repl.it-hosting
+Setup: https://github.com/ItsMrReals/qEon/wiki/Setup-part-one:-repl.it-hosting
 
-Setup part two: https://github.com/ItsMrReals/rBot/wiki/Setup-part-two:-Getting-discord-bot-token
+Setup part two: https://github.com/ItsMrReals/qEon/wiki/Setup-part-two:-Getting-discord-bot-token
 
-Setup part three: https://github.com/ItsMrReals/rBot/wiki/Setup-part-three:-Setting-the-bot-up
+Setup part three: https://github.com/ItsMrReals/qEon/wiki/Setup-part-three:-Setting-the-bot-up
 
 Support server: https://discord.gg/MXTcKuq
 
-Extras: https://github.com/ItsMrReals/rBot/wiki/Extras
+Extras: https://github.com/ItsMrReals/qEon/wiki/Extras
 
-Plugins: https://github.com/ItsMrReals/rBot/wiki/rBot-plugins
+Plugins: https://github.com/ItsMrReals/qEon/wiki/rBot-plugins
 
 
 ## Pricing
