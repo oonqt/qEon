@@ -68,4 +68,4 @@ Discord user is Reals#0001 if ya need somthing.
 
 Dev? If you are you can make new commands and dm me Reals#0001 and I might add them (if I do you will get full credit for the command)
 
-R.I.P the name rbot, qeon is better :)
+R.I.P the name rbot, the name qeon is better :)
