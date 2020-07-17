@@ -63,10 +63,31 @@ exports.run = (client, message, args, config) => {
       {
         name: prefix + "warn",
         value: " Warns the desired user - <User> <warn reason>",
+      },{
+        name: prefix + "whois",
+        value: " Who is the desired roblox user - <username or ID> ",
       }
     )
 
     .setFooter(config.embed.footer + " | help command");
   message.channel.send("✅ Sent commands in dms");
   message.author.send(rankbed1);
+  if (config.plugins.xp.enabled === "ture") {
+      const rankbed2 = new discord.MessageEmbed()
+
+      .setTitle("Help command")
+      .setColor("GREEN")
+      .setDescription("**Here are my XP commands**")
+
+      .addFields(
+        { name: prefix + "xp", value: "Shows you're xp stats" },
+        {
+          name: prefix + "leaderboard",
+          value: "Shows the xp leaderboard",
+        }
+      )
+        message.author.send(rankbed2);
+
+
+  }
 };
