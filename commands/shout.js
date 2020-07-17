@@ -46,6 +46,7 @@ exports.run = async (client, message, args, config) => {
       .setFooter(config.embed.footer + " | Ranking command");
 
     const origshout = await roblox.getShout(config.groupid);
+    console.log(origshout)
 
     const rankdogjfhfk = new discord.MessageEmbed()
       .setTitle("Shout")
@@ -54,7 +55,7 @@ exports.run = async (client, message, args, config) => {
         `We have connected to the roblox group service, Wold you like to shout (part might be tagged out)?`
       )
       .addField("New Shout message:", shout, true)
-      .addField("Current shout message:", origshout.body, true);
+      .addField("Current shout message:", origshout.body || "N/A", true);
 
     const msg = await message.channel.send(rankbed3);
 
@@ -94,7 +95,7 @@ exports.run = async (client, message, args, config) => {
               .setColor("GREEN")
               .setDescription(`We have shouted on your group!`)
               .addField("New Shout message:", shout, true)
-              .addField("Old shout message:", origshout.body, true)
+              .addField("Old shout message:", origshout.body || "N/A", true)
               .setFooter(config.embed.footer + " | Ranking command");
             msg.edit(rankeddrfugsd);
             if (config.robloxlogchannel === "true") {
@@ -104,7 +105,7 @@ exports.run = async (client, message, args, config) => {
                 .setDescription(`There has been a ranking action.`)
                 .addField("Action type:", "Promote", true)
 
-                .addField("Old shout:", origshout.body, true)
+                .addField("Old shout:", origshout.body || "N/A", true)
                 .addField("New shout:", shout, true)
 
                 .addField("Ranker:", discorduser, true)
