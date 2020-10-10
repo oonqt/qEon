@@ -30,11 +30,12 @@ Examples of unacceptable behavior by participants include:
   address, without explicit permission
 - Other conduct which could reasonably be considered inappropriate in a
   professional setting
-- Removing original credits when forking rbot
-- Reselling Rbot
+- Removing original credits when forking qEon
+- Reselling qEon
 - Adding rbot and or rbot code to a seaprate bot other then rbot.
-- Using rBot to break discord/roblox TOS.
+- Using qEon to break discord/roblox TOS.
 - Harassing/insluting rbot.
+- Useing qEon in a server that scams/server owner that scams
 
 ## Our Responsibilities
 
