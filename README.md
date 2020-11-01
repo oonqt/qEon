@@ -4,17 +4,17 @@ qEon is a powerfull open source roblox ranking/roblox group/discord moderation b
 
 ## Links
 
-Setup: https://forums.qsmtrblx.com/t/shout-relay-and-more-qeon-plugins/61
+Setup: https://github.com/QSMT-Roblox/qEon/wiki/Setup-part-one:-repl.it-hosting
 
-Setup part two: https://forums.qsmtrblx.com/t/setup-part-two-getting-discord-bot-token/58
+Setup part two: https://github.com/QSMT-Roblox/qEon/wiki/Setup-part-two:-Getting-discord-bot-token
 
-Setup part three: https://forums.qsmtrblx.com/t/setup-part-three-setting-the-bot-up/59/2
+Setup part three: https://github.com/QSMT-Roblox/qEon/wiki/Setup-part-three:-Setting-the-bot-up
 
 QSMT discord server: https://discord.gg/MXTcKuq
 
-Extras: https://forums.qsmtrblx.com/t/member-counter-and-how-to-update-qeon-extras/60/2
+Extras: https://github.com/QSMT-Roblox/qEon/wiki/Extras
 
-Plugins: https://forums.qsmtrblx.com/t/shout-relay-and-more-qeon-plugins/61
+Plugins: https://github.com/QSMT-Roblox/qEon/wiki/qEon-plugins
 
 
 ## Pricing
